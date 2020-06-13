@@ -48,6 +48,13 @@ Using params in this way can get quite cumbersome and repetitive. This is where 
 ## Strong Params for object creation (POST/PATCH)
 Strong params allow us to whitelist which fields incoming data is allowed to update in the database.
 ```
+def create
+  @cat = Cat.new(cat_params)
+  # more code
+end
+
+private
+
 def cat_params
   params.require(:cat).permit(:name, :age)
 end
