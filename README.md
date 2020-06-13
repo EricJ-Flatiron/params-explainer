@@ -31,7 +31,7 @@ def create
 end
 ```
 
-Doing so will cause an error. This is a security measure that helps protect the information in the database. Any user who has access to the front-end can use the DEV Tools to modify or add forms on a webpage. If the user adds fields to a form in which the name attributes match the column names in the database, they have the ability to add or modify data which they are not supposed to have access to. For example, a user could add a field that maps to an administrative_access column, and set the value to one which provides them with a high-level of access to a website's resources.
+Doing so will cause an error. This is a security measure that helps protect the information in the database. Any user who has access to the front-end can use the DEV Tools to modify or add forms on a webpage. If the user adds fields to a form (or makes a fetch request or uses Postman, for example) in which the name attributes match the column names in the database, they have the ability to add or modify data which they are not supposed to have access to. For example, a user could add a field that maps to an administrative_access column, and set the value to one which provides them with a high-level of access to a website's resources.
 
 This setting can be overridden: https://api.rubyonrails.org/classes/ActionController/Parameters.html
 
