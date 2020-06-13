@@ -63,3 +63,6 @@ end
 This helps preserve the integrity of our data while writing less code / keeping it DRY. We can also choose how unwanted parameters are handled: should they be filtered out or should the object be invalidated? 
 
 More info: https://api.rubyonrails.org/classes/ActionController/Parameters.html
+
+### Explore
+What is the return value of cat_params above? How could you find out?
