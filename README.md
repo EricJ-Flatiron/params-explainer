@@ -38,7 +38,7 @@ This setting can be overridden: https://api.rubyonrails.org/classes/ActionContro
 At all times, we can use params in our create/update actions if we list them out separately:
 ```
 def create
-  @cat = Cat.create(name: params[:cat][:name], params[:cat][:age])
+  @cat = Cat.create(name: params[:cat][:name], age: params[:cat][:age])
   # more code
 end
 ```
